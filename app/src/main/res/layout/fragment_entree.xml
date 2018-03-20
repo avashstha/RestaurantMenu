@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.75"
+        android:contentDescription="@string/ui_tabname_entree"
+        android:orientation="horizontal"
+        android:src="@drawable/lunch" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:singleLine="false"
+        android:text="@string/entreeMenu"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rBtnChoice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="80dp"
+                    android:orientation="horizontal"
+                    android:text="@string/entree_choice1"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"/>
+
+                <RadioButton
+                    android:id="@+id/rBtnChoice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/entree_choice2"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"/>
+
+                <RadioButton
+                    android:id="@+id/rBtnChoice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/entree_choice3"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/entree_choice4"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"/>
+            </RadioGroup>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

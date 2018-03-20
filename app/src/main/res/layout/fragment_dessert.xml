@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/ui_tabname_dessert"
+        android:orientation="horizontal"
+        android:alpha=".75"
+        android:src="@drawable/snack"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:singleLine="false"
+        android:text="@string/dessertMenu"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rBtnChoice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="80dp"
+                    android:orientation="horizontal"
+                    android:text="@string/dessert_choice1"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/rBtnChoice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/dessert_choice2"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/rBtnChoice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/dessert_choice3"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/dessert_choice4"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </RadioGroup>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
